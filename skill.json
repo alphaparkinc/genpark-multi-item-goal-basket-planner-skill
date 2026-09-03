@@ -1,0 +1,39 @@
+{
+  "name": "genpark-multi-item-goal-basket-planner-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Goal-driven multi-item basket planner synthesizing complete item bundles within budget ceilings for complex shopping tasks.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "shopping-agent",
+  "tags": [
+    "planning-goals",
+    "multi-item-basket",
+    "bundle-planner",
+    "shopping-agent",
+    "anthropic-commerce"
+  ],
+  "inputs": {
+    "goal_description": {
+      "type": "string"
+    },
+    "budget_ceiling_usd": {
+      "type": "number"
+    }
+  },
+  "outputs": {
+    "basket_plan_id": {
+      "type": "string"
+    },
+    "planned_bundle_items": {
+      "type": "array"
+    },
+    "total_basket_cost_usd": {
+      "type": "number"
+    },
+    "bundle_manifest_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
